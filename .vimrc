@@ -39,6 +39,7 @@ syntax on
 set number
 set si
 set tabstop=4
+set shiftwidth=4
 set incsearch
 set hlsearch
 let g:indentLine_char = '¦'
