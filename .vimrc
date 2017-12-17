@@ -32,6 +32,7 @@ Plugin 'suan/vim-instant-markdown'
 Plugin 'lilydjwg/fcitx.vim'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'Yggdroot/indentLine'
+Plugin 'vim-airline/vim-airline'
 " 插件列表结束
 call vundle#end()
 filetype plugin indent on
