@@ -33,6 +33,7 @@ Plugin 'lilydjwg/fcitx.vim'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'Yggdroot/indentLine'
 Plugin 'vim-airline/vim-airline'
+Plugin 'scrooloose/syntastic'
 " 插件列表结束
 call vundle#end()
 filetype plugin indent on
@@ -49,3 +50,11 @@ let g:indentLine_color_term = 239
 map <C-f> :Autoformat<CR>
 map <C-a> \c<space>
 map <C-e> :NERDTreeToggle<CR>
+set statusline+=%#warningms#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
