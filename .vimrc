@@ -43,6 +43,7 @@ set tabstop=4
 set shiftwidth=4
 set incsearch
 set hlsearch
+set relativenumber
 let g:indentLine_char = '¦'
 let g:indentLine_color_term = 239
 map <C-f> :Autoformat<CR>
