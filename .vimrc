@@ -35,6 +35,7 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'vim-airline/vim-airline'
 Plugin 'scrooloose/syntastic'
 Plugin 'luochen1990/rainbow'
+Plugin 'ervandew/supertab'
 " 插件列表结束
 call vundle#end()
 filetype plugin indent on
@@ -65,3 +66,14 @@ let g:syntastic_cpp_compiler='clang++'
 let g:syntastic_cpp_compiler_options='-std=c++11 -stdlib=libc++'
 "settings for rainbow"
 let g:rainbow_active = 1
+"settings for easymotion"
+let g:EasyMotion_smartcase=1
+map f <Plug>(easymotion-prefix)
+map ff <Plug>(easymotion-s)
+map fs <Plug>(easymotion-f)
+map fl <Plug>(easymotion-lineforward)
+map fj <Plug>(easymotion-j)
+map fk <Plug>(easymotion-k)
+map fh <Plug>(easymotion-linebackward)
+"settings for supertab"
+let g:SuperTabRetainCompletionType=2
