@@ -34,6 +34,7 @@ Plugin 'Chiel92/vim-autoformat'
 Plugin 'Yggdroot/indentLine'
 Plugin 'vim-airline/vim-airline'
 Plugin 'scrooloose/syntastic'
+Plugin 'luochen1990/rainbow'
 " 插件列表结束
 call vundle#end()
 filetype plugin indent on
@@ -62,3 +63,5 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_enable_highlighting=1
 let g:syntastic_cpp_compiler='clang++'
 let g:syntastic_cpp_compiler_options='-std=c++11 -stdlib=libc++'
+"settings for rainbow"
+let g:rainbow_active = 1
