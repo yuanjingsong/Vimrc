@@ -36,6 +36,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'scrooloose/syntastic'
 Plugin 'luochen1990/rainbow'
 Plugin 'ervandew/supertab'
+Plugin 'tpope/vim-surround'
 " 插件列表结束
 call vundle#end()
 filetype plugin indent on
@@ -48,7 +49,11 @@ set incsearch
 set hlsearch
 set relativenumber
 let g:indentLine_char = '¦'
-let g:indentLine_color_term = 239
+let g:indentLine_color_term = 245
+"settings for autoformat"
+let g:formatdef_harttle = '"clang-format --style=WebKit"'
+let g:formatters_cpp = ['harttle']
+let g:formatters_c = ['harttle']
 map <C-f> :Autoformat<CR>
 map <C-a> \c<space>
 map <C-e> :NERDTreeToggle<CR>
