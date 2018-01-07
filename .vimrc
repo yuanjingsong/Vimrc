@@ -44,6 +44,7 @@ syntax on
 set number
 set si
 set tabstop=4
+set expandtab
 set shiftwidth=4
 set incsearch
 set hlsearch
