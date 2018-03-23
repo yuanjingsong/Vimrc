@@ -37,6 +37,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'luochen1990/rainbow'
 Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-surround'
+Plugin 'elzr/vim-json'
 " 插件列表结束
 call vundle#end()
 filetype plugin indent on
