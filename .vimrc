@@ -38,6 +38,8 @@ Plugin 'luochen1990/rainbow'
 Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-surround'
 Plugin 'elzr/vim-json'
+Plugin 'airblade/vim-gitgutter'
+
 " 插件列表结束
 call vundle#end()
 filetype plugin indent on
@@ -84,3 +86,6 @@ map fk <Plug>(easymotion-k)
 map fh <Plug>(easymotion-linebackward)
 "settings for supertab"
 let g:SuperTabRetainCompletionType=2
+
+"settings for fileencoding"
+set fileencodings=ucs-bom,utf-8,utf-16,gbk,big5,gb18030,latin1
