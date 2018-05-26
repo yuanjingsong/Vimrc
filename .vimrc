@@ -12,7 +12,6 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'derekwyatt/vim-fswitch'
 Plugin 'kshenoy/vim-signature'
-Plugin 'vim-scripts/BOOKMARKS--Mark-and-Highlight-Full-Lines'
 Plugin 'majutsushi/tagbar'
 Plugin 'vim-scripts/indexer.tar.gz'
 Plugin 'vim-scripts/DfrankUtil'
@@ -28,7 +27,6 @@ Plugin 'gcmt/wildfire.vim'
 Plugin 'sjl/gundo.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'Raimondi/delimitMate'
-Plugin 'suan/vim-instant-markdown'
 Plugin 'lilydjwg/fcitx.vim'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'Yggdroot/indentLine'
@@ -40,8 +38,9 @@ Plugin 'tpope/vim-surround'
 Plugin 'elzr/vim-json'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'kchmck/vim-coffee-script'
-
+Plugin 'drmingdrmer/xptemplate'
 " 插件列表结束
+"PluginEnd
 call vundle#end()
 filetype plugin indent on
 syntax on
@@ -55,6 +54,7 @@ set hlsearch
 set relativenumber
 let g:indentLine_char = '¦'
 let g:indentLine_color_term = 245
+
 "settings for autoformat"
 let g:formatdef_harttle = '"clang-format --style=WebKit"'
 let g:formatters_cpp = ['harttle']
@@ -65,6 +65,7 @@ map <C-e> :NERDTreeToggle<CR>
 set statusline+=%#warningms#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+
 "settings for syntastic"
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_error_symbol='✗'
@@ -74,6 +75,7 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_enable_highlighting=1
 let g:syntastic_cpp_compiler='clang++'
 let g:syntastic_cpp_compiler_options='-std=c++11 -stdlib=libc++'
+
 "settings for rainbow"
 let g:rainbow_active = 1
 "settings for easymotion"
@@ -85,8 +87,12 @@ map fl <Plug>(easymotion-lineforward)
 map fj <Plug>(easymotion-j)
 map fk <Plug>(easymotion-k)
 map fh <Plug>(easymotion-linebackward)
+
 "settings for supertab"
 let g:SuperTabRetainCompletionType=2
 
 "settings for fileencoding"
 set fileencodings=ucs-bom,utf-8,utf-16,gbk,big5,gb18030,latin1
+
+"setting for xptemplate"
+let g:xptemplate_vars = "BRfun= "
