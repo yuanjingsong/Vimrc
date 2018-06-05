@@ -96,3 +96,4 @@ set fileencodings=ucs-bom,utf-8,utf-16,gbk,big5,gb18030,latin1
 
 "setting for xptemplate"
 let g:xptemplate_vars = "BRfun= "
+let g:xptemplate_vars = "SPcmd=&BRloop= "
