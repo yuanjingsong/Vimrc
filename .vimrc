@@ -31,6 +31,7 @@ Plugin 'lilydjwg/fcitx.vim'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'Yggdroot/indentLine'
 Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/syntastic'
 Plugin 'luochen1990/rainbow'
 Plugin 'ervandew/supertab'
@@ -39,6 +40,8 @@ Plugin 'elzr/vim-json'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'drmingdrmer/xptemplate'
+Plugin 'docunext/closetag.vim'
+Plugin 'posva/vim-vue'
 " 插件列表结束
 "PluginEnd
 call vundle#end()
@@ -96,3 +99,9 @@ set fileencodings=ucs-bom,utf-8,utf-16,gbk,big5,gb18030,latin1
 
 "setting for xptemplate"
 let g:xptemplate_vars="BRfun=&SPcmd=&BRloop= "
+
+"setting for airline theme"
+let g:airline_theme="angr"
+
+"settings for close_tag.vim
+let g:closetag_html_style=1
