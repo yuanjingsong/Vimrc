@@ -105,3 +105,6 @@ let g:airline_theme="angr"
 
 "settings for close_tag.vim
 let g:closetag_html_style=1
+
+"add cursor line
+set cul
