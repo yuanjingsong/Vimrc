@@ -42,6 +42,9 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'drmingdrmer/xptemplate'
 Plugin 'docunext/closetag.vim'
 Plugin 'posva/vim-vue'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+
 " 插件列表结束
 "PluginEnd
 call vundle#end()
@@ -108,3 +111,4 @@ let g:closetag_html_style=1
 
 "add cursor line
 set cul
+
